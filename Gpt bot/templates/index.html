@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Brad AI Clone</title>
+    <link rel="icon" href="/icons8-ai-64.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Brad AI Clone</h1>
+        
+        <form action="/ask" method="POST">
+            <input type="text" name="user_input" id="user_input" />
+            <input type="submit" value="Ask" />
+        </form>
+        
+        <div id="response" class="response-box"></div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
